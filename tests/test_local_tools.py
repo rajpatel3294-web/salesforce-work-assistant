@@ -1,4 +1,5 @@
 import importlib.util
+import json
 import re
 import tempfile
 import unittest
@@ -68,6 +69,22 @@ class MetadataTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             with self.assertRaises(ValueError):
                 snapshot(Path(tmp)/'missing')
+
+class PluginPackagingTests(unittest.TestCase):
+    def test_marketplace_resolves_plugin_and_all_custom_skills(self):
+        marketplace = json.loads((ROOT/'.claude-plugin/marketplace.json').read_text())
+        self.assertTrue(marketplace['owner']['name'])
+        self.assertEqual(1, len(marketplace['plugins']))
+        entry = marketplace['plugins'][0]
+        plugin_root = (ROOT/entry['source']).resolve()
+        self.assertEqual(ROOT, plugin_root)
+        manifest = json.loads((plugin_root/'.claude-plugin/plugin.json').read_text())
+        self.assertEqual(entry['name'], manifest['name'])
+        discovered = {p.parent.name for p in (plugin_root/'skills').glob('*/SKILL.md')}
+        catalog = json.loads((ROOT/'catalog/custom-skills.json').read_text())
+        self.assertEqual({x['name'] for x in catalog}, discovered)
+        self.assertNotIn('hooks', manifest)
+        self.assertNotIn('mcpServers', manifest)
 
 class InstallerTests(unittest.TestCase):
     def test_all_skills_portable_after_selective_install(self):

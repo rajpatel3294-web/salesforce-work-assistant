@@ -77,3 +77,32 @@ Upstream ownership and license notices remain intact. See [Third-party notices](
 ## Personal work assistant
 See [Claude Code setup and acceptance tests](docs/CLAUDE_CODE_SETUP.md) for architecture approval,
 reuse analysis, plan-based implementation, Jira drafts and persistent project records.
+
+## Install through Claude's plugin marketplace
+
+Add this marketplace in Claude's Plugins interface:
+
+```text
+rajpatel3294-web/salesforce-work-assistant
+```
+
+Sync the marketplace, then install **salesforce-work-assistant** from it. Adding a
+marketplace and installing its plugin are separate steps. In Claude Code you can use:
+
+```text
+/plugin marketplace add rajpatel3294-web/salesforce-work-assistant
+/plugin install salesforce-work-assistant@salesforce-work-assistant
+```
+
+Start a new session after installation and select the namespaced skill:
+
+```text
+/salesforce-work-assistant:sf-route-work
+```
+
+The plugin packages the 20 custom skills in skills/. It does not authenticate to
+Salesforce or automatically install the 246 upstream catalog entries. Marketplace
+installation does not load the root CLAUDE.md as project instructions; each custom
+skill includes its own runtime and architecture lifecycle guidance. Use the setup
+guide for company-project instructions. Avoid installing duplicate copies of the
+same skills through both the plugin and the manual copy installer.

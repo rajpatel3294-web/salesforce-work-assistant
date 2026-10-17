@@ -1,0 +1,9 @@
+{
+  "name": "salesforce-work-assistant",
+  "version": "0.2.1",
+  "description": "Salesforce investigation, architecture, development, testing and review skills.",
+  "author": {
+    "name": "Salesforce Work Assistant maintainers"
+  },
+  "repository": "https://github.com/rajpatel3294-web/salesforce-work-assistant"
+}

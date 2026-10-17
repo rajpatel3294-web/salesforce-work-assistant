@@ -1,0 +1,14 @@
+{
+  "name": "salesforce-work-assistant",
+  "owner": {
+    "name": "Salesforce Work Assistant maintainers"
+  },
+  "plugins": [
+    {
+      "name": "salesforce-work-assistant",
+      "source": "./",
+      "description": "20 Salesforce engineering workflows with evidence and architecture guidance."
+    }
+  ],
+  "description": "Salesforce engineering workflows for investigation, architecture, development, testing and review."
+}
