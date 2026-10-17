@@ -30,7 +30,7 @@ See [Validation](docs/VALIDATION.md) and [Known Limitations](docs/LIMITATIONS.md
 
 ```bash
 git clone --recurse-submodules https://github.com/rajpatel3294-web/salesforce-work-assistant.git
-cd salesforce-engineering-hub
+cd salesforce-work-assistant
 python scripts/doctor.py
 python scripts/validate_repo.py
 python -m unittest discover -s tests -v
