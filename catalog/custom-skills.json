@@ -1,0 +1,232 @@
+[
+  {
+    "name": "sf-route-work",
+    "title": "Route Salesforce Work",
+    "description": "Route Salesforce development, administration, architecture or incident work. Also use for reviewing changes, preparing validation, drafting Jira updates, saving handovers and resuming project work.",
+    "path": "skills/sf-route-work",
+    "status": "locally-checked",
+    "sources": [
+      "upstream",
+      "architecture"
+    ]
+  },
+  {
+    "name": "sf-investigate-issue",
+    "title": "Investigate Salesforce Issues",
+    "description": "Trace Salesforce errors, incorrect data, unexpected automation, debug logs and integration failures to evidence. Use for root-cause investigation before implementing a fix.",
+    "path": "skills/sf-investigate-issue",
+    "status": "locally-checked",
+    "sources": [
+      "automation",
+      "apex-security",
+      "events"
+    ]
+  },
+  {
+    "name": "sf-design-architecture",
+    "title": "Design Salesforce Architecture",
+    "description": "Plan new Salesforce development or enhancements, review architecture and evaluate reuse. Inspect current systems, produce a versioned architecture plan with acceptance criteria, and obtain approval before implementation.",
+    "path": "skills/sf-design-architecture",
+    "status": "locally-checked",
+    "sources": [
+      "architecture",
+      "automation",
+      "events"
+    ]
+  },
+  {
+    "name": "sf-build-apex",
+    "title": "Build and Review Apex",
+    "description": "Implement and review Apex classes, triggers, Batch, Queueable, Finalizer, invocable and REST services. Use for .cls and .trigger changes after scope or root cause is established.",
+    "path": "skills/sf-build-apex",
+    "status": "locally-checked",
+    "sources": [
+      "apex-security",
+      "analyzer",
+      "automation"
+    ]
+  },
+  {
+    "name": "sf-review-automation",
+    "title": "Review and Build Automation",
+    "description": "Investigate, design or change Salesforce Flow, validation rules, approval dependencies and trigger interactions. Use for automation conflicts, expiration overwrites, recursion and Flow metadata.",
+    "path": "skills/sf-review-automation",
+    "status": "locally-checked",
+    "sources": [
+      "automation",
+      "analyzer"
+    ]
+  },
+  {
+    "name": "sf-test-behavior",
+    "title": "Test Salesforce Behavior",
+    "description": "Create and assess Apex, LWC, Flow, integration and user acceptance tests. Use for test failures, coverage improvement and regression design without weakening business assertions.",
+    "path": "skills/sf-test-behavior",
+    "status": "locally-checked",
+    "sources": [
+      "analyzer",
+      "apex-security",
+      "agent-tests"
+    ]
+  },
+  {
+    "name": "sf-review-access",
+    "title": "Review Salesforce Access",
+    "description": "Review CRUD/FLS, sharing, Experience Cloud access, integration principals, credentials and Apex API version changes. Use for security-sensitive Salesforce design and code reviews.",
+    "path": "skills/sf-review-access",
+    "status": "locally-checked",
+    "sources": [
+      "apex-security",
+      "portal",
+      "analyzer"
+    ]
+  },
+  {
+    "name": "sf-review-portal",
+    "title": "Review Experience Cloud Portals",
+    "description": "Build and investigate Experience Cloud LWC, distributor visibility, assets, entitlements and Salesforce Files. Use for portal search and certificate access or download failures.",
+    "path": "skills/sf-review-portal",
+    "status": "scenario-reviewed",
+    "sources": [
+      "portal",
+      "files",
+      "apex-security"
+    ]
+  },
+  {
+    "name": "sf-engineer-cpq",
+    "title": "Engineer CPQ and Revenue Workflows",
+    "description": "Investigate or implement Salesforce CPQ quoting, pricing, cloning, approvals, orders and document generation. Use for SBQQ managed package workflows and quote reissue; distinguish Revenue Cloud first.",
+    "path": "skills/sf-engineer-cpq",
+    "status": "locally-checked",
+    "sources": [
+      "cpq",
+      "cpq-router"
+    ]
+  },
+  {
+    "name": "sf-integrate-reliably",
+    "title": "Build Reliable Salesforce Integrations",
+    "description": "Design and diagnose Salesforce REST/SOAP, Platform Events, CDC, Pub/Sub and MuleSoft connections. Use for intermittent delivery, timeout, replay, duplicate and recovery problems.",
+    "path": "skills/sf-integrate-reliably",
+    "status": "scenario-reviewed",
+    "sources": [
+      "events",
+      "mule-events",
+      "mule-reference"
+    ]
+  },
+  {
+    "name": "sf-audit-org",
+    "title": "Audit Salesforce Orgs",
+    "description": "Inventory and compare Salesforce metadata, package versions, permissions and environment drift. Use for sandbox versus production analysis or a scoped org assessment.",
+    "path": "skills/sf-audit-org",
+    "status": "locally-checked",
+    "sources": [
+      "upstream",
+      "apex-security"
+    ]
+  },
+  {
+    "name": "sf-release-change",
+    "title": "Release Salesforce Changes",
+    "description": "Plan, validate and release Salesforce metadata and controlled data changes. Use for deployment failures, release sequencing, production rollout and rollback planning.",
+    "path": "skills/sf-release-change",
+    "status": "locally-checked",
+    "sources": [
+      "analyzer",
+      "upstream"
+    ]
+  },
+  {
+    "name": "sf-manage-data",
+    "title": "Manage Salesforce Data",
+    "description": "Plan SOQL, data migration, deduplication and controlled bulk changes. Use for data repair, import/export, reconciliation and query design.",
+    "path": "skills/sf-manage-data",
+    "status": "locally-checked",
+    "sources": [
+      "apex-security",
+      "automation"
+    ]
+  },
+  {
+    "name": "sf-operate-sales-service",
+    "title": "Operate Sales and Service Cloud",
+    "description": "Investigate Sales Cloud and Service Cloud behavior including leads, opportunities, cases, routing, entitlements, milestones and work orders.",
+    "path": "skills/sf-operate-sales-service",
+    "status": "locally-checked",
+    "sources": [
+      "upstream",
+      "automation"
+    ]
+  },
+  {
+    "name": "sf-operate-marketing",
+    "title": "Operate Marketing Cloud",
+    "description": "Investigate or design Marketing Cloud Engagement and Account Engagement integrations, journeys and audience operations. Use for SFMC REST/SOAP, data extensions, subscriber keys and marketing automation.",
+    "path": "skills/sf-operate-marketing",
+    "status": "locally-checked",
+    "sources": [
+      "marketing",
+      "marketing-scopes"
+    ]
+  },
+  {
+    "name": "sf-operate-data-analytics",
+    "title": "Operate Data and Analytics",
+    "description": "Review Data 360/Data Cloud ingestion, identity resolution, activation, CRM Analytics, reports and Tableau integration. Use for data lineage, incorrect aggregates and analytics access.",
+    "path": "skills/sf-operate-data-analytics",
+    "status": "locally-checked",
+    "sources": [
+      "data360",
+      "data360-identity",
+      "upstream"
+    ]
+  },
+  {
+    "name": "sf-evaluate-agentforce",
+    "title": "Evaluate Agentforce",
+    "description": "Design or test Agentforce actions, grounded responses, permissions, handoffs and evaluation suites. Use for agent quality, prompt injection, unsafe actions and regression testing.",
+    "path": "skills/sf-evaluate-agentforce",
+    "status": "locally-checked",
+    "sources": [
+      "agent-tests",
+      "apex-security"
+    ]
+  },
+  {
+    "name": "sf-route-specialist-clouds",
+    "title": "Route Specialist Salesforce Clouds",
+    "description": "Research and route Salesforce Industries, OmniStudio, Field Service, Commerce, Health, Financial Services, Education, Nonprofit, Life Sciences, Consumer Goods and other specialist products.",
+    "path": "skills/sf-route-specialist-clouds",
+    "status": "locally-checked",
+    "sources": [
+      "upstream",
+      "architecture"
+    ]
+  },
+  {
+    "name": "sf-package-solution",
+    "title": "Package Salesforce Solutions",
+    "description": "Plan Salesforce unlocked or managed packaging, namespace boundaries, dependencies, upgrades and AppExchange preparation. Use for reusable package delivery and multi-org distribution.",
+    "path": "skills/sf-package-solution",
+    "status": "locally-checked",
+    "sources": [
+      "upstream",
+      "analyzer",
+      "apex-security"
+    ]
+  },
+  {
+    "name": "sf-project-context",
+    "title": "Apply Salesforce Project Context",
+    "description": "Apply project-specific Salesforce context from approved local records. Use when business acceptance criteria, integration contracts or historical decisions affect a task; verify them against current evidence.",
+    "path": "skills/sf-project-context",
+    "status": "locally-checked",
+    "sources": [
+      "cpq",
+      "events",
+      "portal"
+    ]
+  }
+]

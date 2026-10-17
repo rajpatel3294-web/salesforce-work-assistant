@@ -1,0 +1,5 @@
+interface:
+  display_name: "Route Specialist Salesforce Clouds"
+  short_description: "Route Specialist Salesforce Clouds: evidence and checks"
+  default_prompt: "Use $sf-route-specialist-clouds to handle this Salesforce task with verified evidence."
+

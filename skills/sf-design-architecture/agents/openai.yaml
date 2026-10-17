@@ -1,0 +1,5 @@
+interface:
+  display_name: "Design Salesforce Architecture"
+  short_description: "Design Salesforce Architecture: evidence and verification"
+  default_prompt: "Use $sf-design-architecture to handle this Salesforce task with verified evidence."
+

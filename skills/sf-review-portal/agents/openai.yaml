@@ -1,0 +1,5 @@
+interface:
+  display_name: "Review Experience Cloud Portals"
+  short_description: "Review Experience Cloud Portals: evidence and verification"
+  default_prompt: "Use $sf-review-portal to handle this Salesforce task with verified evidence."
+

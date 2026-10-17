@@ -1,0 +1,139 @@
+[
+  {
+    "id": "upstream",
+    "title": "Salesforce Skills Library",
+    "url": "https://github.com/forcedotcom/sf-skills",
+    "finding": "Pinned upstream skill collection; tool dependencies and behavior vary per skill.",
+    "reviewed_on": "2026-10-11",
+    "type": "official-upstream-repository"
+  },
+  {
+    "id": "apex-security",
+    "title": "Secure Apex Classes",
+    "url": "https://developer.salesforce.com/docs/platform/lwc/guide/apex-security",
+    "finding": "API-version-aware database access modes; sharing does not by itself enforce CRUD/FLS.",
+    "reviewed_on": "2026-10-11",
+    "type": "official-primary"
+  },
+  {
+    "id": "automation",
+    "title": "Record-Triggered Automation",
+    "url": "https://architect.salesforce.com/docs/architect/decision-guides/guide/record-triggered.html",
+    "finding": "Choose Flow, Apex, or a hybrid from automation density, complexity and maintainability.",
+    "reviewed_on": "2026-10-11",
+    "type": "official-primary"
+  },
+  {
+    "id": "events",
+    "title": "Pub/Sub Event Message Durability",
+    "url": "https://developer.salesforce.com/docs/platform/pub-sub-api/guide/event-message-durability.html",
+    "finding": "Platform event/CDC retention and replay behavior; replay identifiers are opaque positions, not business deduplication keys.",
+    "reviewed_on": "2026-10-11",
+    "type": "official-primary"
+  },
+  {
+    "id": "mule-events",
+    "title": "Processing Events with Salesforce Connector",
+    "url": "https://docs.mulesoft.com/salesforce-connector/latest/salesforce-connector-processing-events",
+    "finding": "Replay options and persistent Object Store behavior; match guidance to deployed connector version.",
+    "reviewed_on": "2026-10-11",
+    "type": "official-primary"
+  },
+  {
+    "id": "mule-reference",
+    "title": "Salesforce Connector Reference",
+    "url": "https://docs.mulesoft.com/salesforce-connector/latest/salesforce-connector-reference",
+    "finding": "Reconnection and replay configuration; streaming types have different semantics.",
+    "reviewed_on": "2026-10-11",
+    "type": "official-primary"
+  },
+  {
+    "id": "cpq",
+    "title": "Salesforce CPQ API",
+    "url": "https://developer.salesforce.com/docs/revenue/cpq-developer-guide/guide/cpq-api-get-started.html",
+    "finding": "Managed-package CPQ APIs are separate from Revenue Cloud APIs.",
+    "reviewed_on": "2026-10-11",
+    "type": "official-primary"
+  },
+  {
+    "id": "cpq-router",
+    "title": "CPQ Service Router",
+    "url": "https://developer.salesforce.com/docs/revenue/cpq-developer-guide/guide/cpq-api-service-router.html",
+    "finding": "Supported CPQ routing entry point; inspect installed package and supported models.",
+    "reviewed_on": "2026-10-11",
+    "type": "official-primary"
+  },
+  {
+    "id": "analyzer",
+    "title": "Salesforce Code Analyzer",
+    "url": "https://developer.salesforce.com/docs/platform/salesforce-code-analyzer/guide/code-analyzer.html",
+    "finding": "Use the current code-analyzer tool family and inspect actual engine results.",
+    "reviewed_on": "2026-10-11",
+    "type": "official-primary"
+  },
+  {
+    "id": "marketing",
+    "title": "Marketing Cloud Engagement REST API",
+    "url": "https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/rest-api-overview",
+    "finding": "REST API capability overview; distinguish product, tenant, business unit and endpoint.",
+    "reviewed_on": "2026-10-11",
+    "type": "official-primary"
+  },
+  {
+    "id": "marketing-scopes",
+    "title": "Marketing REST Permissions and Scopes",
+    "url": "https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_rest_permission_scopes/rest-permissions-and-scopes.html",
+    "finding": "Verify required scopes for the specific operation.",
+    "reviewed_on": "2026-10-11",
+    "type": "official-primary"
+  },
+  {
+    "id": "agent-tests",
+    "title": "Agentforce Testing API",
+    "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/testing-api.html",
+    "finding": "Batch evaluation is available through Testing API; feature and agent-version compatibility must be checked.",
+    "reviewed_on": "2026-10-11",
+    "type": "official-primary"
+  },
+  {
+    "id": "data360",
+    "title": "Data 360 Development Overview",
+    "url": "https://developer.salesforce.com/docs/data/data-cloud-dev/guide/dc-dev-overview.html",
+    "finding": "Discover data services and APIs; confirm enabled capabilities and data-space context.",
+    "reviewed_on": "2026-10-11",
+    "type": "official-primary"
+  },
+  {
+    "id": "data360-identity",
+    "title": "Data 360 Architecture",
+    "url": "https://developer.salesforce.com/docs/data/data-cloud-dev/guide/dc-architecture.html",
+    "finding": "Distinguish match rules from reconciliation rules when evaluating unified profiles.",
+    "reviewed_on": "2026-10-11",
+    "type": "official-primary"
+  },
+  {
+    "id": "portal",
+    "title": "Secure Experience Sites",
+    "url": "https://developer.salesforce.com/docs/platform/communities-dev/guide/communities-dev-security-authenticated-and-guest-users.html",
+    "finding": "Review authenticated and guest access separately.",
+    "reviewed_on": "2026-10-11",
+    "type": "official-primary"
+  },
+  {
+    "id": "files",
+    "title": "Open Files in LWC",
+    "url": "https://developer.salesforce.com/docs/platform/lwc/guide/use-open-files.html",
+    "finding": "File-preview navigation support differs by runtime; verify the Experience Cloud surface.",
+    "reviewed_on": "2026-10-11",
+    "type": "official-primary"
+  },
+  {
+    "id": "architecture",
+    "title": "Salesforce Well-Architected Framework",
+    "url": "https://architect.salesforce.com/docs/architect/well-architected/guide/framework.html",
+    "finding": "Use current decision guidance and evaluate trade-offs rather than relying on a timeless checklist.",
+    "reviewed_on": "2026-10-11",
+    "type": "official-primary"
+  }
+]
+

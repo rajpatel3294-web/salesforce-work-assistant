@@ -1,0 +1,5 @@
+interface:
+  display_name: "Release Salesforce Changes"
+  short_description: "Release Salesforce Changes: evidence and checks"
+  default_prompt: "Use $sf-release-change to handle this Salesforce task with verified evidence."
+

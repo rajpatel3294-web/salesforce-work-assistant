@@ -1,0 +1,5 @@
+interface:
+  display_name: "Test Salesforce Behavior"
+  short_description: "Test Salesforce Behavior: evidence and verification"
+  default_prompt: "Use $sf-test-behavior to handle this Salesforce task with verified evidence."
+

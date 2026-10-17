@@ -1,0 +1,4 @@
+interface:
+  display_name: "Apply Salesforce Project Context"
+  short_description: "Use scoped project records and verify current evidence"
+  default_prompt: "Use $sf-project-context to apply verified context for this Salesforce project."

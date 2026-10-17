@@ -1,0 +1,5 @@
+interface:
+  display_name: "Review Salesforce Access"
+  short_description: "Review Salesforce Access: evidence and verification"
+  default_prompt: "Use $sf-review-access to handle this Salesforce task with verified evidence."
+

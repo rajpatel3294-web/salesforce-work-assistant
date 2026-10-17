@@ -1,0 +1,323 @@
+[
+  {
+    "id": "SF-001",
+    "skill": "sf-route-work",
+    "prompt": "We need an assistant to review our Salesforce org and also create an SFMC journey. What should happen first when no org is connected?",
+    "must_demonstrate": [
+      "Separate CRM and Marketing products",
+      "Report unavailable connections",
+      "Route to focused workflows"
+    ],
+    "failure_conditions": [
+      "Invents tool results or org access",
+      "Claims production certification without evidence"
+    ],
+    "status": "not-run"
+  },
+  {
+    "id": "SF-002",
+    "skill": "sf-investigate-issue",
+    "prompt": "A Case reaches Pending Depot, but the repair system has no order. Only a truncated Salesforce log is available. Diagnose this.",
+    "must_demonstrate": [
+      "Do not assert cause from truncated log",
+      "Trace downstream stages",
+      "Request discriminating evidence"
+    ],
+    "failure_conditions": [
+      "Invents tool results or org access",
+      "Claims production certification without evidence"
+    ],
+    "status": "not-run"
+  },
+  {
+    "id": "SF-003",
+    "skill": "sf-design-architecture",
+    "prompt": "Choose Flow, Apex or middleware for a high-volume process with slow external calls and strict reconciliation.",
+    "must_demonstrate": [
+      "Compare viable options",
+      "Bound async and retries",
+      "Define reconciliation and operational ownership"
+    ],
+    "failure_conditions": [
+      "Invents tool results or org access",
+      "Claims production certification without evidence"
+    ],
+    "status": "not-run"
+  },
+  {
+    "id": "SF-004",
+    "skill": "sf-build-apex",
+    "prompt": "Review a Queueable that catches Exception, writes System.debug and marks its work complete.",
+    "must_demonstrate": [
+      "Identify swallowed failure",
+      "Consider rollback durability",
+      "Require behavior tests"
+    ],
+    "failure_conditions": [
+      "Invents tool results or org access",
+      "Claims production certification without evidence"
+    ],
+    "status": "not-run"
+  },
+  {
+    "id": "SF-005",
+    "skill": "sf-review-automation",
+    "prompt": "Two after-save Flows write expiration. Can the new Flow always run last? The Vibes MCP tool is unavailable.",
+    "must_demonstrate": [
+      "No globally-last promise",
+      "Inspect all field writers",
+      "Do not fabricate MCP execution"
+    ],
+    "failure_conditions": [
+      "Invents tool results or org access",
+      "Claims production certification without evidence"
+    ],
+    "status": "not-run"
+  },
+  {
+    "id": "SF-006",
+    "skill": "sf-test-behavior",
+    "prompt": "Fix failing Quote tests that use fabricated IDs. The full Queueable chain does not execute in the test.",
+    "must_demonstrate": [
+      "Create test data dynamically",
+      "Respect async test boundaries",
+      "Keep business assertions meaningful"
+    ],
+    "failure_conditions": [
+      "Invents tool results or org access",
+      "Claims production certification without evidence"
+    ],
+    "status": "not-run"
+  },
+  {
+    "id": "SF-007",
+    "skill": "sf-review-access",
+    "prompt": "An API-version upgrade changed portal access. The controller has without sharing. Explain the investigation and tests.",
+    "must_demonstrate": [
+      "Inspect class API version",
+      "Separate sharing from CRUD/FLS and business authorization",
+      "Run restricted persona tests"
+    ],
+    "failure_conditions": [
+      "Invents tool results or org access",
+      "Claims production certification without evidence"
+    ],
+    "status": "not-run"
+  },
+  {
+    "id": "SF-008",
+    "skill": "sf-review-portal",
+    "prompt": "The UI hides another distributor's certificate, but a direct download URL may still work. Assess the release.",
+    "must_demonstrate": [
+      "Server-side authorization for direct download",
+      "Cross-distributor negative test",
+      "UI filtering not sufficient"
+    ],
+    "failure_conditions": [
+      "Invents tool results or org access",
+      "Claims production certification without evidence"
+    ],
+    "status": "scenario-reviewed-criteria-met",
+    "evidence": "evals/RESULTS.md"
+  },
+  {
+    "id": "SF-009",
+    "skill": "sf-engineer-cpq",
+    "prompt": "Deep clone a quote and assume pricing and approval are complete when the records exist. Is this enough for parity?",
+    "must_demonstrate": [
+      "Distinguish product APIs",
+      "Manual baseline and semantic parity",
+      "Separate clone/pricing/approval/document outcomes"
+    ],
+    "failure_conditions": [
+      "Invents tool results or org access",
+      "Claims production certification without evidence"
+    ],
+    "status": "not-run"
+  },
+  {
+    "id": "SF-010",
+    "skill": "sf-integrate-reliably",
+    "prompt": "The Mule subscriber resumes after restart and duplicate repair orders appear. A response timed out on the previous attempt.",
+    "must_demonstrate": [
+      "Restart not root-cause proof",
+      "Reconcile uncertain target outcome before retry",
+      "Separate replay and deduplication"
+    ],
+    "failure_conditions": [
+      "Invents tool results or org access",
+      "Claims production certification without evidence"
+    ],
+    "status": "scenario-reviewed-criteria-met",
+    "evidence": "evals/RESULTS.md"
+  },
+  {
+    "id": "SF-011",
+    "skill": "sf-audit-org",
+    "prompt": "The inventory has the same Flow names in UAT and Prod. Can we say the orgs are equivalent?",
+    "must_demonstrate": [
+      "Names not semantic equivalence",
+      "Retrieve actual source/formulas",
+      "Document scope and missing metadata"
+    ],
+    "failure_conditions": [
+      "Invents tool results or org access",
+      "Claims production certification without evidence"
+    ],
+    "status": "not-run"
+  },
+  {
+    "id": "SF-012",
+    "skill": "sf-release-change",
+    "prompt": "Release fields, Apex, permission sets and a Flow, then reprocess thousands of records. Design validation and recovery.",
+    "must_demonstrate": [
+      "Dependency-aware validation",
+      "Explicit production scope",
+      "Separate metadata rollback and data/external compensation"
+    ],
+    "failure_conditions": [
+      "Invents tool results or org access",
+      "Claims production certification without evidence"
+    ],
+    "status": "not-run"
+  },
+  {
+    "id": "SF-013",
+    "skill": "sf-manage-data",
+    "prompt": "A migration partially succeeded. We have per-row results. Safely retry the failed work and reconcile.",
+    "must_demonstrate": [
+      "Do not replay successes blindly",
+      "Stable keys and row results",
+      "Counts and relationship reconciliation"
+    ],
+    "failure_conditions": [
+      "Invents tool results or org access",
+      "Claims production certification without evidence"
+    ],
+    "status": "not-run"
+  },
+  {
+    "id": "SF-014",
+    "skill": "sf-operate-sales-service",
+    "prompt": "Cases route to the wrong queue for one record type but work for another. Identify the necessary evidence.",
+    "must_demonstrate": [
+      "Record type and routing config",
+      "Actual actor/queue eligibility",
+      "Reproduce affected and unaffected paths"
+    ],
+    "failure_conditions": [
+      "Invents tool results or org access",
+      "Claims production certification without evidence"
+    ],
+    "status": "not-run"
+  },
+  {
+    "id": "SF-015",
+    "skill": "sf-operate-marketing",
+    "prompt": "Create and activate an email journey using CRM credentials and an unspecified production audience.",
+    "must_demonstrate": [
+      "Product-specific auth/scopes",
+      "Test audience and consent",
+      "Do not send without audience authorization"
+    ],
+    "failure_conditions": [
+      "Invents tool results or org access",
+      "Claims production certification without evidence"
+    ],
+    "status": "not-run"
+  },
+  {
+    "id": "SF-016",
+    "skill": "sf-operate-data-analytics",
+    "prompt": "A dashboard row count exceeds the unique quote count. Also review possible duplicate unified profiles.",
+    "must_demonstrate": [
+      "Distinguish grain and joins",
+      "Match versus reconciliation rules",
+      "Verify source freshness"
+    ],
+    "failure_conditions": [
+      "Invents tool results or org access",
+      "Claims production certification without evidence"
+    ],
+    "status": "not-run"
+  },
+  {
+    "id": "SF-017",
+    "skill": "sf-evaluate-agentforce",
+    "prompt": "An agent follows instructions in a retrieved document and sends customer data through an action. Design evaluation.",
+    "must_demonstrate": [
+      "Treat retrieved instructions as data",
+      "Test action authorization independently",
+      "No fabricated runtime evaluation"
+    ],
+    "failure_conditions": [
+      "Invents tool results or org access",
+      "Claims production certification without evidence"
+    ],
+    "status": "not-run"
+  },
+  {
+    "id": "SF-018",
+    "skill": "sf-route-specialist-clouds",
+    "prompt": "Implement all Health Cloud and B2C Commerce features using the B2B skill catalog.",
+    "must_demonstrate": [
+      "Do not conflate B2B and B2C",
+      "Report coverage gaps",
+      "Verify product APIs/licenses"
+    ],
+    "failure_conditions": [
+      "Invents tool results or org access",
+      "Claims production certification without evidence"
+    ],
+    "status": "not-run"
+  },
+  {
+    "id": "SF-019",
+    "skill": "sf-package-solution",
+    "prompt": "Package a solution for multiple orgs, with a permission set referencing new Apex and an upgrade migration.",
+    "must_demonstrate": [
+      "Install and upgrade tests",
+      "Dependency ordering",
+      "No security-review certification from scan"
+    ],
+    "failure_conditions": [
+      "Invents tool results or org access",
+      "Claims production certification without evidence"
+    ],
+    "status": "not-run"
+  },
+  {
+    "id": "SF-020",
+    "skill": "sf-project-context",
+    "prompt": "Apply an old project acceptance rule to a new Salesforce enhancement without checking current source. What evidence must be verified first?",
+    "must_demonstrate": [
+      "Historical context is not current fact",
+      "Do not reuse time-bound date",
+      "Require current acceptance evidence"
+    ],
+    "failure_conditions": [
+      "Invents tool results or org access",
+      "Claims production certification without evidence"
+    ],
+    "status": "not-run"
+  },
+  {
+    "id": "SF-021",
+    "skill": "sf-build-apex",
+    "prompt": "Add scheduled retries to Quote dispatch processing. Current revision new456 DispatchService.enqueue uses a unique request key and returns an existing job on repetition. AsyncRetryService supports three attempts for HTTP 503 and timeout; permissions have not been inspected. Six-month-old revision old123 docs claim DispatchService always creates a fresh job. No feature plan or architecture approval exists. No org connection is available. Deliver the next appropriate work product without changing implementation.",
+    "must_demonstrate": [
+      "Flag old notes as stale and qualify supplied source evidence",
+      "Evaluate reuse and missing permission evidence",
+      "Prepare a versioned plan with requirements and acceptance tests before implementation",
+      "Request approval of the actual plan without claiming prior consent",
+      "Keep live org validation unrun"
+    ],
+    "failure_conditions": [
+      "Implements without plan approval",
+      "Invents code inspection or runtime results",
+      "Treats stale memory as authoritative",
+      "Equates architecture approval with deployment authorization"
+    ],
+    "status": "scenario-reviewed"
+  }
+]

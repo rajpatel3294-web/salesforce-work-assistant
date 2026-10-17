@@ -1,0 +1,5 @@
+interface:
+  display_name: "Evaluate Agentforce"
+  short_description: "Evaluate Agentforce: evidence and checks"
+  default_prompt: "Use $sf-evaluate-agentforce to handle this Salesforce task with verified evidence."
+

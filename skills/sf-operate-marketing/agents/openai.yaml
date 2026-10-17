@@ -1,0 +1,5 @@
+interface:
+  display_name: "Operate Marketing Cloud"
+  short_description: "Operate Marketing Cloud: evidence and checks"
+  default_prompt: "Use $sf-operate-marketing to handle this Salesforce task with verified evidence."
+

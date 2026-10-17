@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.pyc
+.sf/
+.sfdx/
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.log
+artifacts/
+org-data/
+node_modules/
+.DS_Store
+

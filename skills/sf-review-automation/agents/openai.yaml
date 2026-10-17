@@ -1,0 +1,5 @@
+interface:
+  display_name: "Review and Build Automation"
+  short_description: "Review and Build Automation: evidence and verification"
+  default_prompt: "Use $sf-review-automation to handle this Salesforce task with verified evidence."
+

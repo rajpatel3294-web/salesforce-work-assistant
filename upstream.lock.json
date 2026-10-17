@@ -1,0 +1,10 @@
+{
+  "repository": "https://github.com/forcedotcom/sf-skills",
+  "commit": "4bbae5c421e51b40e4169afa72c4496372a602a7",
+  "path": "vendor/sf-skills",
+  "skill_count": 246,
+  "license": "Apache-2.0",
+  "reviewed_on": "2026-10-11",
+  "review_scope": "Catalog inventory and selected engineering workflows; not a full upstream code/security audit."
+}
+

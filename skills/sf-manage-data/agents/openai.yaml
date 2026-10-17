@@ -1,0 +1,5 @@
+interface:
+  display_name: "Manage Salesforce Data"
+  short_description: "Manage Salesforce Data: evidence and checks"
+  default_prompt: "Use $sf-manage-data to handle this Salesforce task with verified evidence."
+

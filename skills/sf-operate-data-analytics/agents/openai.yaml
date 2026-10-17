@@ -1,0 +1,5 @@
+interface:
+  display_name: "Operate Data and Analytics"
+  short_description: "Operate Data and Analytics: evidence and checks"
+  default_prompt: "Use $sf-operate-data-analytics to handle this Salesforce task with verified evidence."
+

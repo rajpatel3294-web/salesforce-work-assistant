@@ -1,0 +1,24 @@
+name: Validate skills and local tools
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  local-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate repository
+        run: python scripts/validate_repo.py
+      - name: Test local utilities
+        run: python -m unittest discover -s tests -v
+      - name: Check Python syntax
+        run: python -m compileall -q scripts tests
+

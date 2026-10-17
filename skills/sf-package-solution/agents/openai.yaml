@@ -1,0 +1,5 @@
+interface:
+  display_name: "Package Salesforce Solutions"
+  short_description: "Package Salesforce Solutions: evidence and checks"
+  default_prompt: "Use $sf-package-solution to handle this Salesforce task with verified evidence."
+

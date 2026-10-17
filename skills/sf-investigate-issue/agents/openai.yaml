@@ -1,0 +1,5 @@
+interface:
+  display_name: "Investigate Salesforce Issues"
+  short_description: "Investigate Salesforce Issues: evidence and verification"
+  default_prompt: "Use $sf-investigate-issue to handle this Salesforce task with verified evidence."
+

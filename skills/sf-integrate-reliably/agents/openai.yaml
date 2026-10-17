@@ -1,0 +1,5 @@
+interface:
+  display_name: "Build Reliable Salesforce Integrations"
+  short_description: "Build Reliable Salesforce Integrations: evidence and checks"
+  default_prompt: "Use $sf-integrate-reliably to handle this Salesforce task with verified evidence."
+

@@ -1,0 +1,5 @@
+interface:
+  display_name: "Operate Sales and Service Cloud"
+  short_description: "Operate Sales and Service Cloud: evidence and checks"
+  default_prompt: "Use $sf-operate-sales-service to handle this Salesforce task with verified evidence."
+

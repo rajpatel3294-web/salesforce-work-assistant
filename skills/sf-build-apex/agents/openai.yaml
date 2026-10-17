@@ -1,0 +1,5 @@
+interface:
+  display_name: "Build and Review Apex"
+  short_description: "Build and Review Apex: evidence and verification"
+  default_prompt: "Use $sf-build-apex to handle this Salesforce task with verified evidence."
+

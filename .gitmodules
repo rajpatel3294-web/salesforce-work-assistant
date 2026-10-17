@@ -1,0 +1,4 @@
+[submodule "vendor/sf-skills"]
+	path = vendor/sf-skills
+	url = https://github.com/forcedotcom/sf-skills.git
+

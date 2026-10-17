@@ -1,0 +1,5 @@
+interface:
+  display_name: "Engineer CPQ and Revenue Workflows"
+  short_description: "Engineer CPQ and Revenue Workflows: evidence and verification"
+  default_prompt: "Use $sf-engineer-cpq to handle this Salesforce task with verified evidence."
+

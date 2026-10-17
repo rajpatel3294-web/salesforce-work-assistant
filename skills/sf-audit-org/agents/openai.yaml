@@ -1,0 +1,5 @@
+interface:
+  display_name: "Audit Salesforce Orgs"
+  short_description: "Audit Salesforce Orgs: evidence and checks"
+  default_prompt: "Use $sf-audit-org to handle this Salesforce task with verified evidence."
+

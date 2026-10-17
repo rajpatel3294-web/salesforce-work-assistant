@@ -1,0 +1,5 @@
+interface:
+  display_name: "Route Salesforce Work"
+  short_description: "Route Salesforce Work: evidence and verification"
+  default_prompt: "Use $sf-route-work to handle this Salesforce task with verified evidence."
+
